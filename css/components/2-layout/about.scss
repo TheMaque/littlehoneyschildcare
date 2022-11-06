@@ -1,0 +1,283 @@
+.about {
+  overflow: hidden;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 210px;
+
+  &__bg {
+    span {
+      position: absolute;
+      width: 55%;
+      top: 10%;
+      right: -15%;
+      z-index: -1;
+
+      img {
+        width: 100%;
+      }
+
+      &:last-child {
+        top: 40%;
+        right: unset;
+        left: -10%;
+      }
+    }
+  }
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 1400px;
+
+    h2 {
+      margin-bottom: 140px;
+    }
+  }
+
+  &__images {
+    margin-bottom: 210px;
+    display: flex;
+    justify-content: space-between;
+
+    &-col {
+      width: calc(50% - 40px);
+
+      &:first-child {
+        padding-top: 110px;
+      }
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+    margin-bottom: 190px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 110%;
+    border-radius: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    &-title {
+      margin-bottom: 85px;
+      p {
+        font-family: $gibson;
+        font-size: 68px;
+        font-weight: 900;
+        line-height: 90px;
+        background-color: $white;
+        color: $main;
+
+        &:first-child {
+          margin-bottom: 110px;
+        }
+      }
+    }
+
+    &-text {
+      text-align: center;
+      p {
+        position: relative;
+        z-index: 1;
+        font-family: $gibson;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 33px;
+        background-color: $white;
+        color: $main;
+
+        &:first-child {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+// 1680px
+@mixin about-xxxxlg-xxxxxlg {
+  .about {
+    padding: 110px 0;
+    &__bg {
+      span {
+        &:last-child {
+          top: 45%;
+        }
+      }
+    }
+
+    &__image {
+      margin-bottom: 150px;
+    }
+
+    &__content {
+      &-title {
+        p {
+          font-size: 58px;
+          line-height: 75px;
+
+          &:first-child {
+            margin-bottom: 80px;
+          }
+        }
+      }
+
+      &-text {
+        p {
+          font-size: 18px;
+          line-height: 25px;
+
+          &:first-child {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 1340px
+@mixin about-xxlg-xxxlg {
+  .about {
+    &__bg {
+      span {
+        &:last-child {
+          top: 42%;
+        }
+      }
+    }
+  }
+}
+
+// 1180px
+@mixin about-xlg-xxlg {
+  .about {
+    &__bg {
+      span {
+        &:last-child {
+          top: 46%;
+        }
+      }
+    }
+    &__content {
+      &-title {
+        p {
+          font-size: 48px;
+          line-height: 62px;
+
+          &:first-child {
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+
+    &__images {
+      margin-bottom: 150px;
+      &-col {
+        width: calc(50% - 20px);
+      }
+    }
+
+    &__image {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+// 1024px
+@mixin about-lg-xlg {
+  .about {
+    &__bg {
+      span {
+        &:last-child {
+          top: 42%;
+        }
+      }
+    }
+  }
+}
+
+// 840px
+@mixin about-md-lg {
+  .about {
+    padding-top: 100px;
+    padding-bottom: 300px;
+
+    &__bg {
+      display: none;
+    }
+
+    &__inner {
+      h2 {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__images {
+      margin-bottom: 130px;
+    }
+
+    &__content {
+      &-title {
+        margin-bottom: 65px;
+        p {
+          font-size: 25px;
+          line-height: 33px;
+
+          &:first-child {
+            margin-bottom: 40px;
+          }
+        }
+      }
+      &-text {
+        text-align: left;
+        p {
+          font-size: 25px;
+          line-height: 34px;
+
+          &:first-child {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 540px
+@mixin about-xsm-sm {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 190px;
+
+    &__images {
+      margin-bottom: 120px;
+      &-col {
+        width: calc(50% - 10px);
+      }
+    }
+
+    &__image {
+      margin-bottom: 60px;
+    }
+
+    &__content {
+      &-title {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

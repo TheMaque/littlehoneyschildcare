@@ -1,0 +1,274 @@
+.reviews {
+  overflow: hidden;
+  padding-top: 200px;
+  padding-bottom: 240px;
+
+  &__inner {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1000px;
+
+    &-title {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 75px;
+      position: relative;
+      font-family: $gibson;
+      font-size: 225px;
+      line-height: 0.9;
+      color: $main;
+      text-align: center;
+      @include transition;
+
+      small {
+        font-size: 0.6em;
+      }
+
+      span {
+        position: absolute;
+        top: -20px;
+        right: -220px;
+        width: 220px;
+        height: 390px;
+        @include transition;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &-content {
+      position: relative;
+      padding-top: 70px;
+      padding-bottom: 85px;
+      background-color: $main;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -5000px;
+        z-index: -1;
+        width: 15000px;
+        height: 100%;
+        background-color: $main;
+      }
+
+      p {
+        margin-bottom: 30px;
+        font-family: $gibson;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 38px;
+        color: $white;
+        text-align: center;
+        @include transition;
+
+        &:last-child {
+          margin: 0;
+          text-align: right;
+          font-size: 35px;
+          line-height: 47px;
+        }
+      }
+    }
+  }
+}
+
+// 1680px
+@mixin reviews-xxxxlg-xxxxxlg {
+  .reviews {
+    padding-top: 150px;
+    padding-bottom: 170px;
+    &__inner {
+      &-title {
+        margin-bottom: 55px;
+        font-size: 160px;
+
+        span {
+          right: -160px;
+          width: 160px;
+          height: 275px;
+        }
+      }
+
+      &-content {
+        padding-top: 50px;
+        padding-bottom: 65px;
+        p {
+          font-size: 19px;
+          line-height: 26px;
+
+          &:last-child {
+            font-size: 24px;
+            line-height: 33px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 1460px
+@mixin reviews-xxxlg-xxxxlg {
+  .reviews {
+    padding: 120px 0;
+    &__inner {
+      &-title {
+        font-size: 140px;
+        span {
+          right: 0;
+          width: 140px;
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+// 1024px
+@mixin reviews-lg-xlg {
+  .reviews {
+    &__inner {
+      &-title {
+        font-size: 100px;
+
+        span {
+          width: 100px;
+          height: 180px;
+        }
+      }
+    }
+  }
+}
+
+// 840px
+@mixin reviews-md-lg {
+  .reviews {
+    padding-top: 270px;
+    padding-bottom: 220px;
+
+    &__inner {
+      &-title {
+        padding-right: 50px;
+        margin-bottom: 105px;
+        font-size: 120px;
+        line-height: 0.8;
+
+        span {
+          top: 50%;
+          right: -120px;
+          z-index: 1;
+          @include transformY;
+          width: 40%;
+          height: 300%;
+        }
+      }
+
+      &-content {
+        padding-top: 175px;
+        padding-bottom: 190px;
+
+        p {
+          text-align: left;
+          font-size: 32px;
+          line-height: 43px;
+
+          &:last-child {
+            text-align: left;
+            font-size: 27px;
+            line-height: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 700px
+@mixin reviews-sm-md {
+  .reviews {
+    padding-top: 140px;
+    padding-bottom: 80px;
+
+    &__inner {
+      &-title {
+        margin-bottom: 80px;
+        font-size: 100px;
+
+        span {
+          right: -120px;
+          width: 40%;
+          height: 300%;
+        }
+      }
+
+      &-content {
+        padding: 120px 0;
+
+        p {
+          font-size: 28px;
+          line-height: 40px;
+
+          &:last-child {
+            font-size: 24px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 540px
+@mixin reviews-xsm-sm {
+  .reviews {
+    padding-top: 180px;
+    padding-bottom: 85px;
+    &__inner {
+      &-title {
+        margin-bottom: 40px;
+        font-size: 72px;
+
+        span {
+          right: -25%;
+        }
+      }
+
+      &-content {
+        padding: 100px 0;
+
+        p {
+          margin-bottom: 40px;
+          font-size: 19px;
+          line-height: 26px;
+          text-align: center;
+
+          &:last-child {
+            font-size: 19px;
+            line-height: 26px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 425px
+@mixin reviews-xxsm-xsm {
+  .reviews {
+    &__inner {
+      padding: 0;
+      &-title {
+        font-size: 54px;
+      }
+
+      &-content {
+        padding: 50px 0;
+      }
+    }
+  }
+}

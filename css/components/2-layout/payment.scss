@@ -1,0 +1,257 @@
+.payment {
+  padding-top: 170px;
+  padding-bottom: 90px;
+  &__inner {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    h2 {
+      margin-bottom: 130px;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    span {
+      display: block;
+      margin-bottom: 100px;
+      font-family: $gibson;
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 68px;
+      color: $main;
+    }
+    li,
+    p {
+      margin-bottom: 40px;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 35px;
+    }
+    p {
+      &:nth-of-type(4) {
+        margin-bottom: 70px;
+      }
+    }
+    li {
+      color: $main;
+      list-style-position: inside;
+    }
+
+    &-btn {
+      display: flex;
+      justify-content: flex-end;
+
+      .button {
+        width: 50%;
+      }
+    }
+  }
+}
+
+// 1680px
+@mixin payment-xxxxlg-xxxxxlg {
+  .payment {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    &__content {
+      span {
+        font-size: 46px;
+        line-height: 60px;
+      }
+    }
+  }
+}
+
+// 1460px
+@mixin payment-xxxlg-xxxxlg {
+  .payment {
+    &__inner {
+      h2 {
+        margin-bottom: 110px;
+      }
+    }
+    &__content {
+      span {
+        margin-bottom: 80px;
+        font-size: 39px;
+        line-height: 56px;
+      }
+    }
+  }
+}
+
+// 1180px
+@mixin payment-xlg-xxlg {
+  .payment {
+    &__inner {
+      h2 {
+        font-size: 72px;
+        line-height: 92px;
+        margin-bottom: 80px;
+      }
+    }
+    &__content {
+      span {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 44px;
+      }
+
+      li,
+      p {
+        margin-bottom: 30px;
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+// 1024px
+@mixin payment-lg-xlg {
+  .payment {
+    &__content {
+      span {
+        font-size: 28px;
+        line-height: 38px;
+      }
+      li,
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// 840px
+@mixin payment-md-lg {
+  .payment {
+    padding-bottom: 50px;
+
+    .auto__container {
+      padding: 0 60px;
+    }
+
+    &__inner {
+      h2 {
+        font-size: 60px;
+        line-height: 80px;
+        margin-bottom: 160px;
+      }
+    }
+    &__content {
+      span {
+        margin-bottom: 60px;
+        font-size: 31px;
+        line-height: 42px;
+
+        &:nth-of-type(2) {
+          margin-bottom: 110px;
+          text-align: center;
+          font-size: 52px;
+          line-height: 70px;
+        }
+      }
+
+      li,
+      p {
+        margin-bottom: 30px;
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      p {
+        &:nth-of-type(4) {
+          margin-bottom: 80px;
+        }
+      }
+
+      &-btn {
+        .button {
+          width: 100%;
+          font-size: 70px;
+          line-height: 91px;
+        }
+      }
+    }
+  }
+}
+
+// 700px
+@mixin payment-sm-md {
+  .payment {
+    padding-top: 40px;
+    padding-bottom: 0;
+
+    &__inner {
+      h2 {
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 90px;
+      }
+    }
+    &__content {
+      span {
+        &:nth-of-type(2) {
+          font-size: 42px;
+          line-height: 56px;
+        }
+      }
+
+      &-btn {
+        .button {
+          font-size: 48px;
+          line-height: 68px;
+        }
+      }
+    }
+  }
+}
+
+// 540px
+@mixin payment-xsm-sm {
+  .payment {
+    &__inner {
+      h2 {
+        font-size: 34px;
+        line-height: 44px;
+        margin-bottom: 45px;
+      }
+    }
+    &__content {
+      span {
+        margin-bottom: 35px;
+        font-size: 28px;
+        line-height: 38px;
+        &:nth-of-type(2) {
+          margin-bottom: 60px;
+          font-size: 34px;
+          line-height: 46px;
+        }
+      }
+
+      li,
+      p {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        &:nth-of-type(4) {
+          margin-bottom: 40px;
+        }
+      }
+
+      &-btn {
+        .button {
+          &.big {
+            font-size: 29px;
+            line-height: 38px;
+          }
+        }
+      }
+    }
+  }
+}

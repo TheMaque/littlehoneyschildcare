@@ -1,0 +1,380 @@
+.features {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: $gray;
+  }
+
+  &__inner {
+    &-title {
+      margin-bottom: 130px;
+      text-align: center;
+
+      h1 {
+        margin-bottom: 100px;
+      }
+
+      p {
+        font-family: $gibson;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 34px;
+
+        &:first-child {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    &-row {
+      margin: 0 -60px;
+      display: flex;
+    }
+  }
+
+  &__block {
+    position: relative;
+    margin: 0 30px;
+    width: calc(33.33333% - 60px);
+
+    &:nth-child(2) {
+      .features__block {
+        &-title,
+        &-text {
+          color: $black;
+        }
+      }
+    }
+
+    &-bg {
+      position: relative;
+      width: 100%;
+      padding-bottom: 95%;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform;
+      width: 60%;
+      height: 50%;
+    }
+
+    &-title {
+      margin-bottom: 40px;
+      text-decoration: underline;
+      font-family: $gibson;
+      font-size: 35px;
+      line-height: 45px;
+      font-weight: 900;
+      color: $white;
+    }
+
+    &-text {
+      font-family: $gibson;
+      font-weight: 500;
+      font-size: 18px;
+      color: $white;
+    }
+  }
+}
+
+// 1680px
+@mixin features-xxxxlg-xxxxxlg {
+  .features {
+    &__block {
+      &-title {
+        font-size: 30px;
+        line-height: 34px;
+      }
+
+      &-text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+// 1540px
+@mixin features-pre-xxxxlg-xxxxxlg {
+  .features {
+    padding: 85px 0;
+
+    &__inner {
+      &-title {
+        margin-bottom: 80px;
+        h1 {
+          margin-bottom: 75px;
+        }
+
+        &-text {
+          p {
+            font-size: 16px;
+            line-height: 21px;
+
+            &:first-child {
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    &__block {
+      &-title {
+        font-size: 24px;
+        line-height: 31px;
+      }
+
+      &-text {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+
+// 1260px
+@mixin features-pre-xxlg-xxxlg {
+  .features {
+    &::before {
+      height: 80%;
+    }
+    &__inner {
+      &-row {
+        margin: -30px -60px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+    &__block {
+      margin: 30px;
+      width: calc(50% - 60px);
+
+      &-title {
+        font-size: 30px;
+        line-height: 34px;
+      }
+
+      &-text {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+// 1024px
+@mixin features-lg-xlg {
+  .features {
+    &__inner {
+      &-title {
+        h1 {
+          margin-bottom: 50px;
+          font-size: 56px;
+          line-height: 76px;
+        }
+      }
+    }
+    &__block {
+      &-title {
+        margin-bottom: 20px;
+        font-size: 26px;
+        line-height: 30px;
+      }
+      &-text {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+// 920px
+@mixin features-pre-lg-xlg {
+  .features {
+    &__block {
+      &-title {
+        margin-bottom: 20px;
+        font-size: 23px;
+        line-height: 28px;
+      }
+      &-text {
+        font-size: 11px;
+        line-height: 13px;
+      }
+    }
+  }
+}
+
+// 840px
+@mixin features-md-lg {
+  .features {
+    padding: 120px 0;
+    &__inner {
+      &-title {
+        margin-bottom: 150px;
+        h1 {
+          margin-bottom: 65px;
+          font-size: 68px;
+          line-height: 90px;
+        }
+
+        &-text {
+          p {
+            font-size: 24px;
+            line-height: 33px;
+
+            &:first-child {
+              margin-bottom: 50px;
+            }
+          }
+        }
+      }
+      &-row {
+        margin: 0 -175px;
+        width: calc(100% + 350px);
+        display: block;
+      }
+    }
+    &__block {
+      margin: 0;
+      margin-top: -100px;
+      width: 100%;
+
+      &-content {
+        text-align: center;
+      }
+
+      &-title {
+        margin-bottom: 50px;
+        font-size: 50px;
+        line-height: 64px;
+      }
+
+      &-text {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// 700px
+@mixin features-sm-md {
+  .features {
+    padding: 80px 0;
+    &__inner {
+      &-title {
+        margin-bottom: 80px;
+        h1 {
+          margin-bottom: 50px;
+          font-size: 56px;
+          line-height: 76px;
+        }
+
+        &-text {
+          p {
+            font-size: 22px;
+            line-height: 30px;
+
+            &:first-child {
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+      &-row {
+        margin: 0 -120px;
+        width: calc(100% + 240px);
+        display: block;
+      }
+    }
+    &__block {
+      margin: 0;
+      margin-top: -100px;
+      width: 100%;
+
+      &-content {
+        text-align: center;
+      }
+
+      &-title {
+        margin-bottom: 50px;
+        font-size: 44px;
+        line-height: 54px;
+      }
+
+      &-text {
+        font-size: 26px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+// 540px
+@mixin features-xsm-sm {
+  .features {
+    padding: 40px 0;
+    &__inner {
+      &-title {
+        h1 {
+          margin-bottom: 30px;
+          margin-bottom: 30px;
+          font-size: 32px;
+          line-height: 42px;
+        }
+        &-text {
+          p {
+            font-size: 13px;
+            line-height: 18px;
+
+            &:first-child {
+              margin-bottom: 25px;
+            }
+          }
+        }
+      }
+    }
+
+    &__block {
+      margin-top: -80px;
+      &-title {
+        margin-bottom: 30px;
+        font-size: 29px;
+        line-height: 38px;
+      }
+
+      &-text {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+}

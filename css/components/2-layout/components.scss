@@ -1,0 +1,63 @@
+/* Typography */
+h1 {
+  font-family: $gibson;
+  font-size: 120px;
+  line-height: 160px;
+  font-weight: 900;
+  color: $main;
+}
+
+h2 {
+  font-family: $gibson;
+  font-size: 112px;
+  line-height: 150px;
+  font-weight: 900;
+  color: $main;
+}
+
+p {
+  color: $main;
+}
+
+.auto__container {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 0 180px;
+  @include transition;
+}
+
+// Buttons
+.button {
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: $gibson;
+  font-weight: 900;
+  background-color: $main;
+  color: $white;
+  cursor: pointer;
+  @include transition;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.big {
+    padding: 30px 100px;
+    font-size: 35px;
+    line-height: 47px;
+  }
+
+  &.primary {
+    padding: 10px 25px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  &.secondary {
+    padding: 23px 47px;
+    color: $black;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: $yellow;
+  }
+}

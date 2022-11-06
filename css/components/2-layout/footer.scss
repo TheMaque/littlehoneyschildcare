@@ -1,0 +1,162 @@
+.footer {
+  padding: 85px 0;
+  background-color: $main;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: calc(50% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+
+    &-mobile {
+      display: none;
+    }
+  }
+
+  &__links {
+    margin: -5px;
+    width: calc(50% - 60px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    font-family: $gibson;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 26px;
+    color: $white;
+    @include transition;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+// 1180px
+@mixin footer-xlg-xxlg {
+  .footer {
+    &__logo {
+      width: calc(45% - 30px);
+    }
+
+    &__links {
+      width: calc(55% - 30px);
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+// 840px
+@mixin footer-md-lg {
+  .footer {
+    position: relative;
+    padding-top: 450px;
+    padding-bottom: 350px;
+
+    &__inner {
+      display: block;
+    }
+
+    &__logo {
+      width: 100%;
+
+      &-desktop {
+        display: none;
+      }
+
+      &-mobile {
+        display: block;
+        position: absolute;
+        top: -10%;
+        left: 50%;
+        @include transformX;
+        width: 50%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &__links {
+      width: 100%;
+      display: block;
+      text-align: center;
+
+      &-col {
+        margin-bottom: 35px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__link {
+      margin-bottom: 30px;
+      font-size: 40px;
+      line-height: 52px;
+    }
+  }
+}
+
+// 700px
+@mixin footer-sm-md {
+  .footer {
+    position: relative;
+    padding-top: 350px;
+    padding-bottom: 300px;
+
+    &__logo {
+      &-mobile {
+        top: -8%;
+      }
+    }
+
+    &__links {
+      &-col {
+        margin-bottom: 25px;
+      }
+    }
+    &__link {
+      margin-bottom: 20px;
+      font-size: 32px;
+      line-height: 46px;
+    }
+  }
+}
+
+// 540px
+@mixin footer-xsm-sm {
+  .footer {
+    padding-top: 280px;
+    padding-bottom: 160px;
+    &__link {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}

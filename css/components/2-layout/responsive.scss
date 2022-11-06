@@ -1,0 +1,342 @@
+// 1860px
+@include xxxxxlg-xxxxxxlg {
+  // layout start
+  @include nav-xxxxxlg-xxxxxxlg;
+  @include kids-xxxxxlg-xxxxxxlg;
+  @include newsletter-xxxxxlg-xxxxxxlg;
+  @include programs-xxxxxlg-xxxxxxlg;
+  // layout end
+
+  h1 {
+    font-size: 112px;
+  }
+}
+
+// 1680px
+@include xxxxlg-xxxxxlg {
+  //   layout start
+  @include header-xxxxlg-xxxxxlg;
+  @include nav-xxxxlg-xxxxxlg;
+  @include kids-xxxxlg-xxxxxlg;
+  @include features-xxxxlg-xxxxxlg;
+  @include direction-xxxxlg-xxxxxlg;
+  @include reviews-xxxxlg-xxxxxlg;
+  @include about-xxxxlg-xxxxxlg;
+  @include newsletter-xxxxlg-xxxxxlg;
+  @include values-xxxxlg-xxxxxlg;
+  @include rules-xxxxlg-xxxxxlg;
+  @include contact-xxxxlg-xxxxxlg;
+  @include resources-xxxxlg-xxxxxlg;
+  @include programs-xxxxlg-xxxxxlg;
+  @include payment-xxxxlg-xxxxxlg;
+  // layout end
+
+  // index start
+  @include intro-xxxxlg-xxxxxlg;
+  @include hero-xxxxlg-xxxxxlg;
+  @include mission-xxxxlg-xxxxxlg;
+  // index end
+
+  .button {
+    &.big {
+      padding: 25px 90px;
+      font-size: 24px;
+      line-height: 31px;
+    }
+    &.primary {
+      padding: 7px 15px;
+      font-size: 17px;
+      line-height: 22px;
+    }
+  }
+
+  h1 {
+    font-size: 84px;
+    line-height: 110px;
+  }
+
+  h2 {
+    font-size: 90px;
+    line-height: 120px;
+  }
+}
+
+// 1540px
+@include pre-xxxxlg-xxxxxlg {
+  // layout start
+  @include features-pre-xxxxlg-xxxxxlg;
+  @include values-pre-xxxxlg-xxxxxlg;
+  // layout end
+}
+
+// 1480px
+@include xxxlg-xxxxlg {
+  // layout start
+  @include reviews-xxxlg-xxxxlg;
+  @include payment-xxxlg-xxxxlg;
+  @include resources-xxxlg-xxxxlg;
+  // layout end
+
+  // index start
+  @include intro-xxxlg-xxxxlg;
+  // index end
+}
+
+// 1440px
+@include pre-xxxlg-xxxxlg {
+  // layout start
+  @include newsletter-pre-xxxlg-xxxxlg;
+  // layout end
+
+  .auto__container {
+    padding: 0 120px;
+  }
+}
+
+// 1340px
+@include xxlg-xxxlg {
+  // layout start
+  @include header-xxlg-xxxlg;
+  @include nav-xxlg-xxxlg;
+  @include kids-xxlg-xxxlg;
+  @include about-xxlg-xxxlg;
+  @include hero-xxlg-xxxlg;
+  @include rules-xxlg-xxxlg;
+  @include contact-xxlg-xxxlg;
+  @include programs-xxlg-xxxlg;
+  // layout end
+
+  .button {
+    &.primary {
+      padding: 7px 15px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  h1,
+  h2 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+}
+
+// 1260px
+@include pre-xxlg-xxxlg {
+  // layout start
+  @include features-pre-xxlg-xxxlg;
+  @include values-pre-xxlg-xxxlg;
+  // layout end
+}
+
+// 1180px
+@include xlg-xxlg {
+  // layout start
+  @include header-xlg-xxlg;
+  @include nav-xlg-xxlg;
+  @include intro-xlg-xxlg;
+  @include kids-xlg-xxlg;
+  @include payment-xlg-xxlg;
+  @include newsletter-xlg-xxlg;
+  @include about-xlg-xxlg;
+  @include resources-xlg-xxlg;
+  @include footer-xlg-xxlg;
+  // layout end
+
+  // index start
+  @include mission-xlg-xxlg;
+  // index end
+
+  .auto__container {
+    padding: 0 80px;
+  }
+}
+
+// 1024px
+@include lg-xlg {
+  // layout start
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include intro-lg-xlg;
+  @include kids-lg-xlg;
+  @include features-lg-xlg;
+  @include about-lg-xlg;
+  @include reviews-lg-xlg;
+  @include values-lg-xlg;
+  @include rules-lg-xlg;
+  @include contact-lg-xlg;
+  @include programs-lg-xlg;
+  @include payment-lg-xlg;
+  // layout end
+
+  // index start
+  @include hero-lg-xlg;
+  // index end
+  .button {
+    &.big {
+      padding: 20px 60px;
+    }
+  }
+
+  h1 {
+    font-size: 58px;
+    line-height: 78px;
+  }
+
+  h2 {
+    font-size: 57px;
+    line-height: 74px;
+  }
+}
+
+// 920px
+@include pre-lg-xlg {
+  // layout start
+  @include features-pre-lg-xlg;
+  @include values-pre-lg-xlg;
+  // layout end
+}
+
+// 840px
+@include md-lg {
+  // layout start
+  @include nav-md-lg;
+  @include kids-md-lg;
+  @include features-md-lg;
+  @include reviews-md-lg;
+  @include payment-md-lg;
+  @include direction-md-lg;
+  @include newsletter-md-lg;
+  @include values-md-lg;
+  @include about-md-lg;
+  @include rules-md-lg;
+  @include contact-md-lg;
+  @include resources-md-lg;
+  @include programs-md-lg;
+  @include footer-md-lg;
+  // layout end
+
+  // index start
+  @include intro-md-lg;
+  @include hero-md-lg;
+  @include mission-md-lg;
+  // index end
+
+  .button {
+    &.secondary {
+      padding: 23px 65px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}
+
+// 760px
+@include pre-md-lg {
+  // layout start
+  @include values-pre-md-lg;
+  // layout end
+
+  h2 {
+    font-size: 48px;
+    line-height: 68px;
+  }
+}
+
+// 700px
+@include sm-md {
+  // layout start
+  @include header-sm-md;
+  @include nav-sm-md;
+  @include intro-sm-md;
+  @include kids-sm-md;
+  @include features-sm-md;
+  @include reviews-sm-md;
+  @include payment-sm-md;
+  @include values-sm-md;
+  @include direction-sm-md;
+  @include newsletter-sm-md;
+  @include rules-sm-md;
+  @include contact-sm-md;
+  @include resources-sm-md;
+  @include programs-sm-md;
+  @include footer-sm-md;
+  // layout end
+
+  // index start
+  @include hero-sm-md;
+  // index end
+
+  .auto__container {
+    padding: 0 30px;
+  }
+
+  h2 {
+    font-size: 44px;
+    line-height: 64px;
+  }
+}
+
+// 670px
+@include pre-sm-md {
+  // layout start
+  @include contact-pre-sm-md;
+  @include values-pre-sm-md;
+  // layout end
+}
+
+// 540px
+@include xsm-sm {
+  // layout start
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+
+  @include kids-xsm-sm;
+  @include features-xsm-sm;
+  @include reviews-xsm-sm;
+  @include payment-xsm-sm;
+  @include direction-xsm-sm;
+  @include newsletter-xsm-sm;
+  @include values-xsm-sm;
+  @include about-xsm-sm;
+  @include contact-xsm-sm;
+  @include resources-xsm-sm;
+  @include programs-xsm-sm;
+  @include footer-xsm-sm;
+  // layout end
+
+  // index start
+  @include intro-xsm-sm;
+  @include hero-xsm-sm;
+  @include mission-xsm-sm;
+  // index end
+
+  .button {
+    &.big {
+      padding: 20px;
+      font-size: 19px;
+      line-height: 25px;
+    }
+    &.secondary {
+      padding: 13px 30px;
+      font-size: 11px;
+      line-height: 14px;
+    }
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+// 425px
+@include xxsm-xsm {
+  // layout start
+  @include nav-xxsm-xsm;
+  @include kids-xxsm-xsm;
+  @include reviews-xxsm-xsm;
+  @include newsletter-xxsm-xsm;
+  @include values-xxsm-xsm;
+  // layout end
+}

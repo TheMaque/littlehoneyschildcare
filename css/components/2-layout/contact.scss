@@ -1,0 +1,374 @@
+.contact {
+  padding-top: 150px;
+  padding-bottom: 200px;
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 1270px;
+  }
+
+  &__content {
+    margin-bottom: 330px;
+    &-title {
+      margin-bottom: 30px;
+      font-family: $gibson;
+      font-weight: 900;
+      font-size: 112px;
+      line-height: 146px;
+      color: $main;
+      text-align: center;
+      @include transition;
+    }
+
+    &-subtitle {
+      margin-bottom: 75px;
+      font-family: $gibson;
+      font-weight: 900;
+      font-size: 68px;
+      line-height: 90px;
+      color: $main;
+      text-align: center;
+      @include transition;
+    }
+
+    p {
+      font-family: $gibson;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 34px;
+      color: $main;
+    }
+  }
+
+  &__form {
+    margin-bottom: 180px;
+    input {
+      box-sizing: border-box;
+      padding: 0 30px;
+      margin-bottom: 90px;
+      width: 100%;
+      height: 80px;
+      background-color: $gray;
+      border: 1px solid #707070;
+      border-radius: 20px;
+
+      &:nth-of-type(3) {
+        margin-bottom: 55px;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      justify-content: flex-end;
+
+      .button {
+        padding: 20px 120px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+  }
+
+  &__address {
+    &-title {
+      margin-bottom: 100px;
+      font-family: $gibson;
+      font-weight: 700;
+      font-size: 82px;
+      line-height: 100px;
+      color: $main;
+    }
+
+    p,
+    a {
+      margin-bottom: 50px;
+      font-family: $gibson;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 40px;
+      color: $main;
+
+      &:last-child {
+        margin-bottom: 0;
+
+        a {
+          display: inline;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      text-decoration: underline;
+      @include transition;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+// 1680px
+@mixin contact-xxxxlg-xxxxxlg {
+  .contact {
+    padding-top: 200px;
+    padding-bottom: 325px;
+
+    &__content {
+      &-title {
+        font-size: 100px;
+        line-height: 130px;
+      }
+
+      &-subtitle {
+        font-size: 60px;
+        line-height: 80px;
+      }
+    }
+  }
+}
+
+// 1340px
+@mixin contact-xxlg-xxxlg {
+  .contact {
+    padding-top: 150px;
+    padding-bottom: 275px;
+
+    &__content {
+      margin-bottom: 250px;
+      &-title {
+        margin-bottom: 20px;
+        font-size: 80px;
+        line-height: 110px;
+      }
+
+      &-subtitle {
+        margin-bottom: 50px;
+        font-size: 54px;
+        line-height: 70px;
+      }
+    }
+
+    &__address {
+      &-title {
+        margin-bottom: 80px;
+        font-size: 70px;
+        line-height: 90px;
+      }
+    }
+  }
+}
+
+// 1024px
+@mixin contact-lg-xlg {
+  .contact {
+    &__content {
+      margin-bottom: 180px;
+      &-title {
+        margin-bottom: 20px;
+        font-size: 60px;
+        line-height: 90px;
+      }
+
+      &-subtitle {
+        font-size: 42px;
+        line-height: 56px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    &__address {
+      &-title {
+        margin-bottom: 60px;
+        font-size: 64px;
+        line-height: 84px;
+      }
+
+      p,
+      a {
+        margin-bottom: 40px;
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+  }
+}
+
+// 840px
+@mixin contact-md-lg {
+  .contact {
+    padding-top: 120px;
+    padding-bottom: 370px;
+
+    &__content {
+      margin-bottom: 140px;
+
+      &-title {
+        margin-bottom: 90px;
+        font-size: 50px;
+        line-height: 70px;
+      }
+
+      &-subtitle {
+        margin-bottom: 80px;
+        font-size: 62px;
+        line-height: 86px;
+      }
+
+      p {
+        font-size: 25px;
+        line-height: 34px;
+      }
+    }
+
+    &__form {
+      margin-bottom: 275px;
+    }
+
+    &__address {
+      &-title {
+        font-size: 51px;
+        line-height: 61px;
+      }
+
+      p,
+      a {
+        margin-bottom: 30px;
+        font-size: 21px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+// 700px
+@mixin contact-sm-md {
+  .contact {
+    .auto__container {
+      padding: 0 60px;
+    }
+  }
+}
+
+// 670px
+@mixin contact-pre-sm-md {
+  .contact {
+    padding-top: 100px;
+    padding-bottom: 280px;
+    &__content {
+      margin-bottom: 110px;
+      &-title {
+        font-size: 38px;
+        line-height: 58px;
+      }
+      &-subtitle {
+        font-size: 46px;
+        line-height: 66px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+
+    &__form {
+      margin-bottom: 150px;
+
+      input {
+        margin-bottom: 60px;
+        height: 60px;
+      }
+
+      &-btn {
+        .button {
+          padding: 15px 80px;
+          font-size: 28px;
+          line-height: 38px;
+        }
+      }
+    }
+
+    &__address {
+      &-title {
+        margin-bottom: 40px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      a,
+      p {
+        margin-bottom: 22px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+// 540px
+@mixin contact-xsm-sm {
+  .contact {
+    padding-top: 75px;
+    padding-bottom: 230px;
+
+    &__content {
+      margin-bottom: 80px;
+      &-title {
+        margin-bottom: 70px;
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      &-subtitle {
+        margin-bottom: 85px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+
+    &__form {
+      margin-bottom: 100px;
+      input {
+        height: 45px;
+        margin-bottom: 50px;
+
+        &:nth-of-type(3) {
+          margin-bottom: 30px;
+        }
+      }
+
+      &-btn {
+        .button {
+          padding: 10px 60px;
+          font-size: 21px;
+          line-height: 27px;
+        }
+      }
+    }
+
+    &__address {
+      &-title {
+        margin-bottom: 30px;
+        font-size: 27px;
+        line-height: 32px;
+      }
+
+      a,
+      p {
+        margin-bottom: 15px;
+        font-size: 11px;
+        line-height: 13px;
+      }
+    }
+  }
+}

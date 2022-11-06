@@ -1,0 +1,379 @@
+.programs {
+  position: relative;
+  padding: 140px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    z-index: -1;
+    background-color: $gray;
+  }
+
+  &__title {
+    margin-bottom: 140px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 100px;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 65%;
+      font-family: $gibson;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+
+  &__row {
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    width: calc(33.33333% - 35px);
+
+    &-title {
+      margin-bottom: 70px;
+      font-family: $gibson;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 38px;
+      text-align: center;
+    }
+
+    &-image {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      padding-bottom: 95%;
+      border-radius: 20px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__schedule {
+    &-title {
+      text-align: center;
+      margin-bottom: 230px;
+      font-family: $gibson;
+      font-weight: 900;
+      font-size: 60px;
+      line-height: 80px;
+      color: $main;
+    }
+
+    li {
+      list-style-position: inside;
+      margin-bottom: 60px;
+      font-family: $gibson;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 47px;
+      color: $main;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// 1860px
+@mixin programs-xxxxxlg-xxxxxxlg {
+  .programs {
+    &__title {
+      h2 {
+        font-size: 90px;
+      }
+    }
+  }
+}
+
+// 1680px
+@mixin programs-xxxxlg-xxxxxlg {
+  .programs {
+    &__title {
+      margin-bottom: 110px;
+      h2 {
+        margin-bottom: 80px;
+        font-size: 80px;
+        line-height: 110px;
+      }
+
+      p {
+        font-size: 21px;
+        line-height: 28px;
+      }
+    }
+
+    &__row {
+      margin-bottom: 150px;
+    }
+
+    &__block {
+      &-title {
+        margin-bottom: 50px;
+        font-size: 21px;
+        line-height: 28px;
+      }
+    }
+
+    &__schedule {
+      &-title {
+        margin-bottom: 180px;
+        font-size: 46px;
+        line-height: 60px;
+      }
+
+      li {
+        font-size: 26px;
+        line-height: 31px;
+      }
+    }
+  }
+}
+
+// 1340px
+@mixin programs-xxlg-xxxlg {
+  .programs {
+    padding: 100px 0;
+    &__title {
+      margin-bottom: 90px;
+      h2 {
+        margin-bottom: 50px;
+        font-size: 68px;
+        line-height: 100px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+
+    &__row {
+      margin-bottom: 110px;
+    }
+
+    &__block {
+      &-title {
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 23px;
+      }
+    }
+
+    &__schedule {
+      &-title {
+        margin-bottom: 130px;
+        font-size: 42px;
+        line-height: 56px;
+      }
+
+      li {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }
+}
+
+// 1024px
+@mixin programs-lg-xlg {
+  .programs {
+    &__title {
+      h2 {
+        font-size: 54px;
+        line-height: 84px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &__block {
+      &-title {
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+
+    &__schedule {
+      &-title {
+        margin-bottom: 100px;
+        font-size: 36px;
+        line-height: 46px;
+      }
+
+      li {
+        margin-bottom: 40px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+// 840px
+@mixin programs-md-lg {
+  .programs {
+    padding: 60px 0;
+
+    &__title {
+      h2 {
+        margin-bottom: 40px;
+        font-size: 43px;
+        line-height: 56px;
+      }
+
+      p {
+        line-height: 21px;
+      }
+    }
+
+    &__row {
+      margin-bottom: 80px;
+    }
+
+    &__block {
+      width: calc(33.33333% - 20px);
+      &-title {
+        margin-bottom: 30px;
+        font-size: 10px;
+        line-height: 14px;
+      }
+    }
+
+    &__schedule {
+      &-title {
+        margin-bottom: 75px;
+        font-size: 29px;
+        line-height: 38px;
+      }
+
+      li {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+// 700px
+@mixin programs-sm-md {
+  .programs {
+    &__title {
+      margin-bottom: 50px;
+      h2 {
+        font-size: 36px;
+        line-height: 46px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+
+    &__row {
+      margin-bottom: 70px;
+    }
+
+    &__block {
+      width: calc(33.33333% - 15px);
+      &-title {
+        margin-bottom: 20px;
+        font-size: 8px;
+        line-height: 12px;
+      }
+    }
+
+    &__schedule {
+      &-title {
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+  }
+}
+
+// 540px
+@mixin programs-xsm-sm {
+  .programs {
+    padding: 50px 0;
+
+    &__title {
+      h2 {
+        margin-bottom: 10px;
+        font-size: 41px;
+        line-height: 54px;
+      }
+
+      p {
+        font-size: 10px;
+        line-height: 14px;
+      }
+    }
+
+    &__row {
+      margin-bottom: 100px;
+      display: block;
+    }
+
+    &__block {
+      position: relative;
+      margin-bottom: 25px;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &-title {
+        position: absolute;
+        width: calc(100% - 40px);
+        top: 20px;
+        right: 20px;
+        z-index: 3;
+        font-size: 33px;
+        line-height: 44px;
+        color: $white;
+        text-align: right;
+      }
+    }
+
+    &__schedule {
+      &-title {
+        margin-bottom: 35px;
+        font-size: 25px;
+        line-height: 33px;
+      }
+
+      li {
+        margin-bottom: 50px;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+}

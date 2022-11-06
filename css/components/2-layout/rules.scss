@@ -1,0 +1,132 @@
+.rules {
+  padding: 160px 0;
+  background-color: $main;
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+  }
+
+  &__block {
+    margin: 50px 0;
+    width: calc(50% - 100px);
+    @include transition;
+
+    p {
+      font-family: $gibson;
+      font-size: 33px;
+      line-height: 44px;
+      font-weight: 900;
+      color: $white;
+      @include transition;
+
+      &:first-child {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+// 1680px
+@mixin rules-xxxxlg-xxxxxlg {
+  .rules {
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    &__block {
+      p {
+        font-size: 25px;
+        line-height: 33px;
+
+        &:first-child {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+// 1340px
+@mixin rules-xxlg-xxxlg {
+  .rules {
+    &__block {
+      width: calc(50% - 70px);
+
+      p {
+        font-size: 23px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+// 1024px
+@mixin rules-lg-xlg {
+  .rules {
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+    &__block {
+      width: calc(50% - 55px);
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+// 840px
+@mixin rules-md-lg {
+  .rules {
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    .auto__container {
+      padding: 0 100px;
+    }
+
+    &__block {
+      margin: 35px 0;
+      width: calc(50% - 40px);
+
+      p {
+        font-size: 15px;
+        line-height: 20px;
+
+        &:first-child {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+// 700px
+@mixin rules-sm-md {
+  .rules {
+    padding: 10px 0;
+
+    .auto__container {
+      padding: 0 80px;
+    }
+    &__list {
+      display: block;
+    }
+    &__block {
+      margin: 30px 0;
+      width: 100%;
+
+      p {
+        &:first-child {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
