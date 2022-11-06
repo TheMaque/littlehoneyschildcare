@@ -304,7 +304,7 @@ p {
           align-items: center;
 }
 .header__inner-logo img {
-  width: 60%;
+  width: 70%;
   padding: 25px;
 }
 
@@ -3690,7 +3690,7 @@ h2 {
   }
 
   .hero__inner-title {
-    left: 30px;
+    left: 15px;
     font-size: 40px;
     line-height: 50px;
   }
@@ -3699,14 +3699,15 @@ h2 {
     padding: 25px 0;
   }
   .mission__inner-title {
-    margin-bottom: 20px;
-    font-size: 22px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 42px;
     line-height: 28px;
   }
   .mission__inner-text p {
     margin-bottom: 12px;
-    font-size: 10px;
-    line-height: 9px;
+    font-size: 14px;
+  
   }
 
   .button.big {
